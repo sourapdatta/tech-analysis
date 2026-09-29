@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tech-analysis</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbf9;
+    --fg: #1a1a18;
+    --muted: #6b6b66;
+    --line: #e2e2dc;
+    --link: #2f5fd0;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16161a;
+      --fg: #e9e9e4;
+      --muted: #9a9a93;
+      --line: #2c2c32;
+      --link: #8ab0ff;
+      --card: #1d1d22;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 2.25rem; font-size: .95rem; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--card);
+    margin-bottom: .6rem;
+  }
+  li a {
+    display: block;
+    padding: .85rem 1rem;
+    color: var(--link);
+    text-decoration: none;
+    font-weight: 550;
+  }
+  li a:hover { text-decoration: underline; }
+  li a .path {
+    display: block;
+    color: var(--muted);
+    font: .8rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-weight: 400;
+    margin-top: .15rem;
+    word-break: break-all;
+  }
+  .empty { color: var(--muted); font-style: italic; }
+  footer {
+    margin-top: 2.5rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>tech-analysis</h1>
+<p class="sub">Static pages published from this repository.</p>
+<ul>
+<li class="empty" style="padding:.85rem 1rem">No pages yet — add an .html file and run ./sync.sh</li>
+</ul>
+<footer>0 page(s) &middot; updated 2026-09-29 05:53 UTC</footer>
+</main>
+</body>
+</html>
